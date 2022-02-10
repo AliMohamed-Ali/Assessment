@@ -1,0 +1,32 @@
+.list-btn{
+    background-color: #232323 !important;
+    color: #fff !important;
+    
+    border-radius: 5px !important;
+    margin: 0.75rem 0 0 !important;
+}
+
+.list-child{
+    color: #fff !important;
+}
+
+.list{
+    background-color: #131313 !important;
+    border-radius: 15px !important;
+    padding: 0.65rem 2rem 2rem !important;
+    max-width: 260px !important;
+    margin: 0 auto !important;
+}
+
+@media (max-width:560px){
+    .list{
+        max-width: none !important;
+    }
+}
+.list-sub{
+    background-color: #131313 !important;
+    color: #A5A5A5 !important;
+    margin: 0 !important;
+    padding: 0 0.2rem !important;
+    font-weight: 200 !important;
+}

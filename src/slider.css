@@ -1,0 +1,47 @@
+.pag{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #131313;
+    border-radius: 15px;
+    padding: 1rem;
+    max-width: 950px;
+}
+
+.slider{
+    margin-bottom: 2rem;
+}
+
+.pag-per{
+    position: relative;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: -1.5%;
+    transform: translate(0, -50%);
+    color: #FFF;
+    font-size: 2rem !important;
+    cursor: pointer;
+}
+
+.prev{
+    position: absolute;
+    top: 50%;
+    left: -2.5%;
+    transform: translate(0, -50%);
+    color: #FFF;
+    font-size: 2rem !important;
+    cursor: pointer;
+}
+
+@media (max-width:560px){
+    .next{
+        right: -12%;
+    }
+
+    .prev{
+        left: -12%;
+    }
+}
