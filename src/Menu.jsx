@@ -108,12 +108,13 @@ const Menu = (props) => {
         </ListItemButton>
         <Collapse in={statueOpen} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
-            {states.map((state) => {
+            {states.map((state,index) => {
               return (
                 <ListItemButton
                   onClick={() => stateHandleClick(state)}
                   className="list-child"
-                  sx={{ pl: 4 }}
+                  sx={{ pl: 4 }} 
+                  key={index}
                 >
                   <ListItemText primary={state} />
                 </ListItemButton>
@@ -130,9 +131,9 @@ const Menu = (props) => {
         </ListItemButton>
         <Collapse in={cityOpen} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
-            {cities.map((city) => {
+            {cities.map((city,index) => {
               return (
-                <ListItemButton className="list-child" sx={{ pl: 4 }}>
+                <ListItemButton key={index} className="list-child" sx={{ pl: 4 }}>
                   <ListItemText primary={city} />
                 </ListItemButton>
               );

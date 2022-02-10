@@ -45,8 +45,8 @@ const App = props => {
           <Typography sx={{color:'#fff', opacity:0.6}} variant="h6" component="div" gutterBottom>
             Products
           </Typography>
-          {pnames.map(pname => {
-            return <Slider pname={pname} items={items.filter(item => item.product_name === pname ).slice()} />
+          {pnames.map((pname,index) => {
+            return <Slider key={index} pname={pname} items={items.filter(item => item.product_name === pname ).slice()} />
           })}
           </Grid>
           
